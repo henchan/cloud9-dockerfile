@@ -1,6 +1,6 @@
 FROM joffrey/node:v0.8.24
 RUN apt-get update
-RUN apt-get install -y git libxml2-dev
+RUN apt-get install -y git libxml2-dev openssh-server
 RUN git clone https://github.com/ajaxorg/cloud9.git /srv/cloud9
 RUN cd /srv/cloud9 && npm install
 RUN mkdir /srv/project 
